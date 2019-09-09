@@ -1,1 +1,1 @@
-Took the original CT100 Device Handler and modified to include IMHO a better interace with ability to easily change setpoints, modes and other settings. Color changes based on mode changes and temperature
+Took the original CT100 Device Handler and modified to include IMHO a better interface with ability to easily change setpoints, modes and other settings. Color changes based on mode changes and temperature
