@@ -1,0 +1,24 @@
+{
+	"serialPath"        : "/dev/ttyACM0",                           // path to the port where Raven device is connected (COM1, /dev/tty1,8)
+	"mqttHost"          : "mqtt://xxx.xxx.xxx.xxx",                   // path to mqtt host, format mqtt://
+	"mqttPort"          : 1883,                                     // mqtt port
+	"logLevel"          : "info",                                  // Default (Info: 2) - error: 0, warn: 1, info: 2, verbose: 3, debug: 4, silly: 5 
+	"demandPath"        : "smartthings/emu2/demand",                // mqqt subscriber topics for various events, demand is the primary one
+	"energyInPath"      : "smartthings/emu2/energyin",
+	"energyOutPath"     : "smartthings/emu2/energyout",
+	"currentUsagePath"  : "smartthings/emu2/usagecurrent",
+	"lastUsagePath"     : "smartthings/emu2/usagelast",
+	"mqttMsgPath"       : "smartthings/emu2/mqttmsg",               // cosolidated mqqt topic includes all - demand, energyin, energyout, current & last usage
+	"mqttErrPath"       : "smartthings/emu2/mqtterr",               // Error message pubisher topic
+	"msgPath"           : "smartthings/emu2/msghandler",            // Catch-all topic subscribed to receive custom messages
+	"logFolderPath"     : "",                                       // default ./log (will try to create one if does not exist, else will save to ./
+	"dataFolderPath"    : "",                                       // default ./data (will try to create one if does not exist, else will save to ./
+	"pollDemandFreq"    : "15",
+	"pollAllFreq"       : "230",
+	"portResetFreq"     : "1800",                                   // Bug with serial port - port needs to be reset at regular intervals
+	"dataSaveTimer"     : "900",									// Time in seconds to save production data to files
+	"meterReadSch"      : "08/30/2018,10/01/2018,10/30/2018,11/29/2018,12/31/2018,01/30/2019,02/28/2019,03/29/2019,04/30/2019,05/30/2019,06/28/2019,07/30/2019,08/29/2019,09/30/2019,10/30/2019,12/02/2019"
+	
+	// This the meter read schedule for this and last month will default to first day of month if not specified for current month
+}
+
