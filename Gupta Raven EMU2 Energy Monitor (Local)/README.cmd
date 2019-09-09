@@ -6,7 +6,7 @@ Since I have Solar panels and there is no net metering in Texas I wanted to get 
 
 The only device  I found which would let me view this usage inside was EMU2 from rainforest. they also have a gateway but I couldn't find any integration with smartthings - there might be a way to integrate with PVwatts and then to smartthings but seemed convoluted.  a RAVEn RFA-Z106 dongle (http://www.rainforestautomation.com/raven).
 
-After much research i found disparate tools to integrate together what I was really wanted. Here is what you will need.
+After much research i found disparate tools to integrate together what I  really wanted. Here is what you will need.
 1. https://github.com/stjohnjohnson/smartthings-mqtt-bridge - You need this bridge to transmit mqtt message to hub and back. This is our SERVER process using node.js - this you need to download from that repository and install 
 
 2. I created node.js implementation that connects to ravenforest (raven.js) - gets the data and transmits it to the bridge (raven_mqtt.js) which relays it to smartthings. This I am calling the CLIENT (see the linux shell scripts to launch these). All configurable properties are in settings.json
