@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+//process.env['DEBUG'] = '*,-not_this'
+process.chdir('/home/pi/emu2/raven') 
+require('/home/pi/emu2/raven/raven_mqtt.js')

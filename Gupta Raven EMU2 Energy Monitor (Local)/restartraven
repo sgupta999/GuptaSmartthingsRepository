@@ -1,0 +1,2 @@
+ps -ef | grep runraven | awk '{print $2}' | xargs sudo kill -9
+/home/pi/bin/runraven > /dev/null 2>&1 &
