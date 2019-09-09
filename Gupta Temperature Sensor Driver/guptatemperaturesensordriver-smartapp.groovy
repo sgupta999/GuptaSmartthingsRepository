@@ -1,3 +1,27 @@
+	/**
+ *  Copyright Sandeep Gupta
+ *
+ *  This software comes with absolutely no WARRANTIES OR CONDITIONS OF ANY KIND under any scenarioor condition
+ *
+ *	This is a variation of the default CT100 thermostat. I found the cycling through modes and increasing
+ *  setpoints one degree at a time very cumbersome. Following is a summary of changes from the default
+ *
+ *	1. Displaying all possible information within the Thermostat multiTile
+ *		a. Removed icon so temperature is visible in large font
+ *		b. Since I have it wired to C-wire, replaced battery info with humidity
+ *		c. Add a dash of color (I am not a graphic designer so...)
+ *
+ *	2. Instead of cycling through all the modes creating dedicated buttons for each mode
+ *		b. Added some colors - slight text overlay issue (can be fixed by replacin with custom icons)
+ *
+ *	3. Besides the one degree up and down controls added a slider control so heating
+ *		and cooling setpoints can be changed in larger increments
+ *		
+ */
+
+	
+	
+	
 	definition(
 		name: "Gupta Temperature Sensor Driver",
 		namespace: "gupta",
